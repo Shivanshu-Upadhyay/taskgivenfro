@@ -1,0 +1,156 @@
+.dishBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.listItem {
+  margin-bottom: 20px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  cursor: pointer;
+ 
+}
+
+.listItemActive{
+  margin-bottom: 20px;
+  background: rgb(88, 73, 221);
+  color:#fff;
+  cursor: pointer;
+ 
+}
+
+/* CSS */
+.button-3 {
+  appearance: none;
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.button-3:focus:not(:focus-visible):not(.focus-visible) {
+  box-shadow: none;
+  outline: none;
+}
+
+.button-3:hover {
+  background-color: #2c974b;
+}
+
+.button-3:focus {
+  box-shadow: rgba(46, 164, 79, 0.4) 0 0 0 3px;
+  outline: none;
+}
+
+.button-3:disabled {
+  background-color: #94d3a2;
+  border-color: rgba(27, 31, 35, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+  cursor: default;
+}
+
+.button-3:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, 0.2) 0 1px 0 inset;
+}
+
+.searchBox {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+  border: 2px solid red;
+  border-radius: 30px;
+  margin-bottom: 10px;
+}
+
+.searchBox > input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: large;
+}
+
+.leftbox{
+  height: 100vh;
+  overflow: auto;
+}
+
+.rightBox2{
+  margin-top: 10px;
+}
+
+.formBlock{
+  display: flex;
+  flex-direction: column;
+}
+.formBlock>input{
+  margin-top: 10px;
+  font-size: larger;
+  padding: 5px 5px;
+}
+
+
+/* CSS */
+.button-34 {
+  background: #5E5DF0;
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+
+.btnBox{
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.MainLeft{
+  position: relative;
+  height: 96%;
+  border: 2px solid rgb(234, 216, 216);
+  overflow: auto;
+}
+
+.bottomAlways{
+  position: absolute;
+  bottom: 15px;
+}
