@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import Select from "react-select";
 import makeAnimated from "react-select/animated";
+import baseUrl from "../config";
 let colourOptions = [
   { value: "chocolate", label: "chocolate" },
   { value: "strawberry", label: "strawberry" },
@@ -28,7 +29,7 @@ function RightBar({ setRfresh, selectDish }) {
 
   const handleCreate = async () => {
     try {
-      await axios.post("http://localhost:5000/createDish", {
+      await axios.post(`${baseUrl}/createDish`, {
         name: dish,
         ingredients: selectMul.map((item) => item.value),
       });
@@ -42,7 +43,7 @@ function RightBar({ setRfresh, selectDish }) {
   };
   const handleUpdate = async () => {
     try {
-      await axios.post("http://localhost:5000/updateDish", {
+      await axios.post(`${baseUrl}/updateDish`, {
         id: selectDish.id,
         name: dish,
         ingredients: selectMul.map((item) => item.value),
@@ -64,7 +65,7 @@ function RightBar({ setRfresh, selectDish }) {
           height: "90vh",
         }}
       >
-        {" "}
+        
         <div>
           <h3> Click on create button to create new dish</h3>
         </div>

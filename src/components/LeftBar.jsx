@@ -1,5 +1,6 @@
 import * as React from "react";
 import axios from "axios";
+import baseUrl from "../config";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
@@ -12,7 +13,7 @@ export default function LeftBar({forRefresh,setSelectDish,selectDish}) {
   const [pageNum, setPageNum] = useState(1);
   const [totalPage, setTotalPage] = useState(1);
   const fetchData = async () => {
-    let { data } = await axios.post("http://localhost:5000/listDish", {
+    let { data } = await axios.post(`${baseUrl}/listDish`, {
       pageNum,
     });
     setData(data.result);
@@ -23,7 +24,7 @@ export default function LeftBar({forRefresh,setSelectDish,selectDish}) {
   }, [pageNum,forRefresh]);
   const searchDish = async (val) => {
     try {
-      let { data } = await axios.post("http://localhost:5000/search", {
+      let { data } = await axios.post(`${baseUrl}/search`, {
         name: val,
       });
       setData(data.result);
